@@ -16,8 +16,8 @@
         android:text="CakeIncrease"
         android:id="@+id/btnCakeIncrease"
         android:layout_alignTop="@+id/btnChocolateIncrease"
-        android:layout_toLeftOf="@+id/button"
-        android:layout_toStartOf="@+id/button"
+        android:layout_toLeftOf="@+id/btnEasy"
+        android:layout_toStartOf="@+id/btnEasy"
         android:onClick="IncreaseCake" />
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -74,7 +74,7 @@
         android:layout_width="66dp"
         android:layout_height="66dp"
         android:text="WineIncrease"
-        android:id="@+id/button"
+        android:id="@+id/btnEasy"
         android:layout_alignTop="@+id/btnCakeIncrease"
         android:layout_centerHorizontal="true"
         android:onClick="IncreaseWine" />
@@ -84,7 +84,7 @@
         android:layout_height="66dp"
         android:id="@+id/imgWine"
         android:background="@drawable/wine"
-        android:layout_above="@+id/button2"
+        android:layout_above="@+id/btnMedium"
         android:layout_toLeftOf="@+id/imgRose"
         android:layout_toStartOf="@+id/imgRose" />
 
@@ -93,7 +93,7 @@
         android:layout_width="66dp"
         android:layout_height="66dp"
         android:text="WineDecrease"
-        android:id="@+id/button2"
+        android:id="@+id/btnMedium"
         android:layout_below="@+id/imgRose"
         android:layout_alignLeft="@+id/imgWine"
         android:layout_alignStart="@+id/imgWine"
@@ -105,9 +105,9 @@
         android:layout_height="66dp"
         android:text="RoseIncrease"
         android:id="@+id/btnRoseIncrease"
-        android:layout_alignTop="@+id/button"
-        android:layout_toRightOf="@+id/button"
-        android:layout_toEndOf="@+id/button"
+        android:layout_alignTop="@+id/btnEasy"
+        android:layout_toRightOf="@+id/btnEasy"
+        android:layout_toEndOf="@+id/btnEasy"
         android:onClick="IncreaseRose" />
 
     <ImageView
@@ -116,7 +116,7 @@
         android:id="@+id/imgRose"
         android:background="@drawable/rose"
         android:layout_below="@+id/btnRoseIncrease"
-        android:layout_toRightOf="@+id/button" />
+        android:layout_toRightOf="@+id/btnEasy" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -170,7 +170,9 @@
         android:layout_alignLeft="@+id/btnChocolateIncrease"
         android:layout_alignStart="@+id/btnChocolateIncrease"
         android:layout_toLeftOf="@+id/btnCakeIncrease"
-        android:layout_toStartOf="@+id/btnCakeIncrease" />
+        android:layout_toStartOf="@+id/btnCakeIncrease"
+        android:textStyle="bold"
+        android:textAlignment="center" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -182,7 +184,9 @@
         android:layout_alignRight="@+id/btnCakeIncrease"
         android:layout_alignEnd="@+id/btnCakeIncrease"
         android:layout_toRightOf="@+id/btnChocolateIncrease"
-        android:layout_toEndOf="@+id/btnChocolateIncrease" />
+        android:layout_toEndOf="@+id/btnChocolateIncrease"
+        android:textStyle="bold"
+        android:textAlignment="center" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -191,10 +195,12 @@
         android:text="0"
         android:id="@+id/txtWine"
         android:layout_above="@+id/btnCakeIncrease"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button"
-        android:layout_alignRight="@+id/button"
-        android:layout_alignEnd="@+id/button" />
+        android:layout_alignLeft="@+id/btnEasy"
+        android:layout_alignStart="@+id/btnEasy"
+        android:layout_alignRight="@+id/btnEasy"
+        android:layout_alignEnd="@+id/btnEasy"
+        android:textStyle="bold"
+        android:textAlignment="center" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -206,7 +212,9 @@
         android:layout_alignRight="@+id/btnRoseIncrease"
         android:layout_alignEnd="@+id/btnRoseIncrease"
         android:layout_alignLeft="@+id/btnRoseIncrease"
-        android:layout_alignStart="@+id/btnRoseIncrease" />
+        android:layout_alignStart="@+id/btnRoseIncrease"
+        android:textStyle="bold"
+        android:textAlignment="center" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -218,6 +226,8 @@
         android:layout_alignEnd="@+id/btnCatIncrase"
         android:layout_alignTop="@+id/txtRose"
         android:layout_alignLeft="@+id/btnCatIncrase"
-        android:layout_alignStart="@+id/btnCatIncrase" />
+        android:layout_alignStart="@+id/btnCatIncrase"
+        android:textStyle="bold"
+        android:textAlignment="center" />
 
 </RelativeLayout>

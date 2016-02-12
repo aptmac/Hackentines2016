@@ -16,34 +16,34 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start"
         android:id="@+id/btnStart"
         android:layout_gravity="center_horizontal"
         android:nestedScrollingEnabled="false"
-        android:onClick="toDifficulty" />
+        android:onClick="toDifficulty"
+        android:background="@drawable/start_out" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="How to Play"
         android:id="@+id/btnIHowtoplay"
         android:layout_gravity="center_horizontal"
-        android:onClick="toHowtoplay" />
+        android:onClick="toHowtoplay"
+        android:background="@drawable/howtoplay_out" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Settings"
         android:id="@+id/btnSettings"
         android:layout_gravity="center_horizontal"
-        android:onClick="toSettings" />
+        android:onClick="toSettings"
+        android:background="@drawable/settings_out" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="About"
         android:id="@+id/btnAbout"
         android:layout_gravity="center_horizontal"
-        android:onClick="toAbout" />
+        android:onClick="toAbout"
+        android:background="@drawable/about_out" />
 
 </LinearLayout>
