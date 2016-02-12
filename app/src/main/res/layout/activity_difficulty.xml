@@ -64,7 +64,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="41dp"
         android:onClick="setDifficultyEasy"
-        android:background="@drawable/easy_out" />
+        android:background="@drawable/easy_button" />
 
     <Button
         android:layout_width="wrap_content"
@@ -73,7 +73,7 @@
         android:layout_below="@+id/btnEasy"
         android:layout_centerHorizontal="true"
         android:onClick="setDifficultyMedium"
-        android:background="@drawable/medium_out" />
+        android:background="@drawable/medium_button" />
 
     <Button
         android:layout_width="wrap_content"
@@ -83,6 +83,6 @@
         android:layout_alignLeft="@+id/btnMedium"
         android:layout_alignStart="@+id/btnMedium"
         android:onClick="setDifficultyHard"
-        android:background="@drawable/hard_out" />
+        android:background="@drawable/hard_button" />
 
 </RelativeLayout>

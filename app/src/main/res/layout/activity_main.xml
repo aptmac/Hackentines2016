@@ -20,7 +20,7 @@
         android:layout_gravity="center_horizontal"
         android:nestedScrollingEnabled="false"
         android:onClick="toDifficulty"
-        android:background="@drawable/start_out" />
+        android:background="@drawable/start_button" />
 
     <Button
         android:layout_width="wrap_content"
@@ -28,7 +28,7 @@
         android:id="@+id/btnIHowtoplay"
         android:layout_gravity="center_horizontal"
         android:onClick="toHowtoplay"
-        android:background="@drawable/howtoplay_out" />
+        android:background="@drawable/howtoplay_button" />
 
     <Button
         android:layout_width="wrap_content"
@@ -36,7 +36,7 @@
         android:id="@+id/btnSettings"
         android:layout_gravity="center_horizontal"
         android:onClick="toSettings"
-        android:background="@drawable/settings_out" />
+        android:background="@drawable/settings_button" />
 
     <Button
         android:layout_width="wrap_content"
@@ -44,6 +44,6 @@
         android:id="@+id/btnAbout"
         android:layout_gravity="center_horizontal"
         android:onClick="toAbout"
-        android:background="@drawable/about_out" />
+        android:background="@drawable/about_button" />
 
 </LinearLayout>

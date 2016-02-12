@@ -172,7 +172,8 @@
         android:layout_toLeftOf="@+id/btnCakeIncrease"
         android:layout_toStartOf="@+id/btnCakeIncrease"
         android:textStyle="bold"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColor="#000000" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -186,7 +187,8 @@
         android:layout_toRightOf="@+id/btnChocolateIncrease"
         android:layout_toEndOf="@+id/btnChocolateIncrease"
         android:textStyle="bold"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColor="#000000" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -200,7 +202,8 @@
         android:layout_alignRight="@+id/btnEasy"
         android:layout_alignEnd="@+id/btnEasy"
         android:textStyle="bold"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColor="#000000" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -214,7 +217,8 @@
         android:layout_alignLeft="@+id/btnRoseIncrease"
         android:layout_alignStart="@+id/btnRoseIncrease"
         android:textStyle="bold"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColor="#000000" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -228,6 +232,52 @@
         android:layout_alignLeft="@+id/btnCatIncrase"
         android:layout_alignStart="@+id/btnCatIncrase"
         android:textStyle="bold"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Quantity Given:"
+        android:id="@+id/txtQuantity"
+        android:layout_above="@+id/txtChocolate"
+        android:layout_alignLeft="@+id/txtChocolate"
+        android:layout_alignStart="@+id/txtChocolate"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgHeart"
+        android:background="@drawable/heart"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/txtCake"
+        android:layout_toStartOf="@+id/txtCake" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Target: 100"
+        android:id="@+id/txtTarget"
+        android:layout_alignTop="@+id/imgHeart"
+        android:layout_toRightOf="@+id/imgHeart"
+        android:layout_toEndOf="@+id/imgHeart"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Current: 50"
+        android:id="@+id/txtCurrent"
+        android:layout_below="@+id/txtTarget"
+        android:layout_toRightOf="@+id/imgHeart"
+        android:layout_toEndOf="@+id/imgHeart"
+        android:textStyle="bold"
+        android:textColor="#000000" />
 
 </RelativeLayout>
