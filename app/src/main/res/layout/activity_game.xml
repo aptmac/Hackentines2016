@@ -9,4 +9,215 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.norifurikake.hackenties2016.Game">
 
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:text="CakeIncrease"
+        android:id="@+id/btnCakeIncrease"
+        android:layout_alignTop="@+id/btnChocolateIncrease"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button"
+        android:onClick="IncreaseCake" />
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:text="CakeDecrease"
+        android:id="@+id/btnCakeDecrease"
+        android:layout_alignTop="@+id/btnChocolateDecrease"
+        android:layout_toLeftOf="@+id/imgWine"
+        android:layout_toStartOf="@+id/imgWine"
+        android:onClick="DecreaseCake" />
+    <ImageView
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:id="@+id/imgCake"
+        android:background="@drawable/cake"
+        android:layout_above="@+id/btnCakeDecrease"
+        android:layout_toLeftOf="@+id/imgWine"
+        android:layout_toStartOf="@+id/imgWine" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:text="ChocoIncrease"
+        android:id="@+id/btnChocolateIncrease"
+        android:layout_above="@+id/imgChocolate"
+        android:layout_alignLeft="@+id/imgChocolate"
+        android:layout_alignStart="@+id/imgChocolate"
+        android:onClick="IncreaseChocolate" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:text="ChocoDecrease"
+        android:id="@+id/btnChocolateDecrease"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/imgCake"
+        android:layout_toStartOf="@+id/imgCake"
+        android:onClick="DecreaseChocolate" />
+
+    <ImageView
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:id="@+id/imgChocolate"
+        android:background="@drawable/chocolate"
+        android:layout_alignTop="@+id/imgCake"
+        android:layout_alignLeft="@+id/btnChocolateDecrease"
+        android:layout_alignStart="@+id/btnChocolateDecrease" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:text="WineIncrease"
+        android:id="@+id/button"
+        android:layout_alignTop="@+id/btnCakeIncrease"
+        android:layout_centerHorizontal="true"
+        android:onClick="IncreaseWine" />
+
+    <ImageView
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:id="@+id/imgWine"
+        android:background="@drawable/wine"
+        android:layout_above="@+id/button2"
+        android:layout_toLeftOf="@+id/imgRose"
+        android:layout_toStartOf="@+id/imgRose" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:text="WineDecrease"
+        android:id="@+id/button2"
+        android:layout_below="@+id/imgRose"
+        android:layout_alignLeft="@+id/imgWine"
+        android:layout_alignStart="@+id/imgWine"
+        android:onClick="DecreaseWine" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:text="RoseIncrease"
+        android:id="@+id/btnRoseIncrease"
+        android:layout_alignTop="@+id/button"
+        android:layout_toRightOf="@+id/button"
+        android:layout_toEndOf="@+id/button"
+        android:onClick="IncreaseRose" />
+
+    <ImageView
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:id="@+id/imgRose"
+        android:background="@drawable/rose"
+        android:layout_below="@+id/btnRoseIncrease"
+        android:layout_toRightOf="@+id/button" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:text="RoseDecrease"
+        android:id="@+id/button4"
+        android:layout_below="@+id/imgRose"
+        android:layout_toLeftOf="@+id/btnCatDecrease"
+        android:layout_toStartOf="@+id/btnCatDecrease"
+        android:onClick="DecreaseRose" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgCat"
+        android:layout_alignTop="@+id/imgRose"
+        android:layout_toRightOf="@+id/imgRose"
+        android:layout_toEndOf="@+id/imgRose"
+        android:background="@drawable/cat" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:text="CatIncrease"
+        android:id="@+id/btnCatIncrase"
+        android:layout_alignTop="@+id/btnRoseIncrease"
+        android:layout_alignLeft="@+id/imgCat"
+        android:layout_alignStart="@+id/imgCat"
+        android:onClick="IncreaseCat" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:text="CatDecrease"
+        android:id="@+id/btnCatDecrease"
+        android:layout_alignTop="@+id/button4"
+        android:layout_alignLeft="@+id/imgCat"
+        android:layout_alignStart="@+id/imgCat"
+        android:onClick="DecreaseCat" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:id="@+id/txtChocolate"
+        android:layout_above="@+id/btnCakeIncrease"
+        android:layout_alignLeft="@+id/btnChocolateIncrease"
+        android:layout_alignStart="@+id/btnChocolateIncrease"
+        android:layout_toLeftOf="@+id/btnCakeIncrease"
+        android:layout_toStartOf="@+id/btnCakeIncrease" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:id="@+id/txtCake"
+        android:layout_above="@+id/btnCakeIncrease"
+        android:layout_alignRight="@+id/btnCakeIncrease"
+        android:layout_alignEnd="@+id/btnCakeIncrease"
+        android:layout_toRightOf="@+id/btnChocolateIncrease"
+        android:layout_toEndOf="@+id/btnChocolateIncrease" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:id="@+id/txtWine"
+        android:layout_above="@+id/btnCakeIncrease"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:id="@+id/txtRose"
+        android:layout_alignTop="@+id/txtWine"
+        android:layout_alignRight="@+id/btnRoseIncrease"
+        android:layout_alignEnd="@+id/btnRoseIncrease"
+        android:layout_alignLeft="@+id/btnRoseIncrease"
+        android:layout_alignStart="@+id/btnRoseIncrease" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:id="@+id/txtCat"
+        android:layout_alignRight="@+id/btnCatIncrase"
+        android:layout_alignEnd="@+id/btnCatIncrase"
+        android:layout_alignTop="@+id/txtRose"
+        android:layout_alignLeft="@+id/btnCatIncrase"
+        android:layout_alignStart="@+id/btnCatIncrase" />
+
 </RelativeLayout>
