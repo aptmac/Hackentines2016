@@ -11,6 +11,5 @@ public class Settings extends ActionBarActivity {
         setContentView(R.layout.activity_settings);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setTitle("Settings");
-
     }
 }

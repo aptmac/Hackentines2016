@@ -17,10 +17,12 @@
         android:layout_height="35dp"
         android:id="@+id/btnCakeIncrease"
         android:layout_alignTop="@+id/btnChocolateIncrease"
-        android:layout_toLeftOf="@+id/btnEasy"
-        android:layout_toStartOf="@+id/btnEasy"
+        android:layout_toLeftOf="@+id/btnWineIncrease"
+        android:layout_toStartOf="@+id/btnWineIncrease"
         android:onClick="IncreaseCake"
-        android:background="@drawable/up_button" />
+        android:background="@drawable/up_button"
+        android:textSize="25dp"
+        android:textColor="#000000" />
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="66dp"
@@ -50,7 +52,9 @@
         android:layout_alignStart="@+id/imgChocolate"
         android:onClick="IncreaseChocolate"
         android:background="@drawable/up_button"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#000000" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -76,11 +80,13 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="66dp"
         android:layout_height="35dp"
-        android:id="@+id/btnEasy"
+        android:id="@+id/btnWineIncrease"
         android:layout_alignTop="@+id/btnCakeIncrease"
         android:layout_centerHorizontal="true"
         android:onClick="IncreaseWine"
-        android:background="@drawable/up_button" />
+        android:background="@drawable/up_button"
+        android:textSize="25dp"
+        android:textColor="#000000" />
 
     <ImageView
         android:layout_width="66dp"
@@ -107,11 +113,13 @@
         android:layout_width="66dp"
         android:layout_height="35dp"
         android:id="@+id/btnRoseIncrease"
-        android:layout_alignTop="@+id/btnEasy"
-        android:layout_toRightOf="@+id/btnEasy"
-        android:layout_toEndOf="@+id/btnEasy"
+        android:layout_alignTop="@+id/btnWineIncrease"
+        android:layout_toRightOf="@+id/btnWineIncrease"
+        android:layout_toEndOf="@+id/btnWineIncrease"
         android:onClick="IncreaseRose"
-        android:background="@drawable/up_button" />
+        android:background="@drawable/up_button"
+        android:textSize="25dp"
+        android:textColor="#000000" />
 
     <ImageView
         android:layout_width="66dp"
@@ -119,7 +127,7 @@
         android:id="@+id/imgRose"
         android:background="@drawable/rose"
         android:layout_below="@+id/btnRoseIncrease"
-        android:layout_toRightOf="@+id/btnEasy" />
+        android:layout_toRightOf="@+id/btnWineIncrease" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -145,12 +153,14 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="66dp"
         android:layout_height="35dp"
-        android:id="@+id/btnCatIncrase"
+        android:id="@+id/btnCatIncrease"
         android:layout_alignTop="@+id/btnRoseIncrease"
         android:layout_alignLeft="@+id/imgCat"
         android:layout_alignStart="@+id/imgCat"
         android:onClick="IncreaseCat"
-        android:background="@drawable/up_button" />
+        android:background="@drawable/up_button"
+        android:textSize="25dp"
+        android:textColor="#000000" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -200,10 +210,10 @@
         android:text="0"
         android:id="@+id/txtWine"
         android:layout_above="@+id/btnCakeIncrease"
-        android:layout_alignLeft="@+id/btnEasy"
-        android:layout_alignStart="@+id/btnEasy"
-        android:layout_alignRight="@+id/btnEasy"
-        android:layout_alignEnd="@+id/btnEasy"
+        android:layout_alignLeft="@+id/btnWineIncrease"
+        android:layout_alignStart="@+id/btnWineIncrease"
+        android:layout_alignRight="@+id/btnWineIncrease"
+        android:layout_alignEnd="@+id/btnWineIncrease"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="17dp" />
@@ -229,11 +239,11 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="0"
         android:id="@+id/txtCat"
-        android:layout_alignRight="@+id/btnCatIncrase"
-        android:layout_alignEnd="@+id/btnCatIncrase"
+        android:layout_alignRight="@+id/btnCatIncrease"
+        android:layout_alignEnd="@+id/btnCatIncrease"
         android:layout_alignTop="@+id/txtRose"
-        android:layout_alignLeft="@+id/btnCatIncrase"
-        android:layout_alignStart="@+id/btnCatIncrase"
+        android:layout_alignLeft="@+id/btnCatIncrease"
+        android:layout_alignStart="@+id/btnCatIncrease"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="17dp" />
@@ -379,8 +389,8 @@
         android:id="@+id/imgGirl"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_toRightOf="@+id/btnEasy"
-        android:layout_toEndOf="@+id/btnEasy"
+        android:layout_toRightOf="@+id/btnWineIncrease"
+        android:layout_toEndOf="@+id/btnWineIncrease"
         android:layout_alignParentTop="true"
         android:layout_above="@+id/txtCurrentRose" />
 
@@ -469,5 +479,17 @@
         android:textColor="#000000"
         android:textStyle="bold"
         android:textSize="17dp" />
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/imgGirlHeart"
+        android:background="@drawable/heart"
+        android:visibility="invisible"
+        android:layout_below="@+id/txtTarget"
+        android:layout_alignRight="@+id/txtCat"
+        android:layout_alignEnd="@+id/txtCat"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" />
 
 </RelativeLayout>

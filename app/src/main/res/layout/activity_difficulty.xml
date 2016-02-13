@@ -69,7 +69,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btnEasy"
+        android:id="@+id/btnWineIncrease"
         android:onClick="setDifficultyEasy"
         android:background="@drawable/easy_button"
         android:layout_above="@+id/btnMedium"
@@ -110,12 +110,12 @@
         android:id="@+id/difficultyBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:progress="8"
-        android:max="15"
+        android:progress="5"
+        android:max="10"
         android:paddingTop="20dp"
-        android:layout_above="@+id/btnEasy"
-        android:layout_alignRight="@+id/btnEasy"
-        android:layout_alignEnd="@+id/btnEasy"
+        android:layout_above="@+id/btnWineIncrease"
+        android:layout_alignRight="@+id/btnWineIncrease"
+        android:layout_alignEnd="@+id/btnWineIncrease"
         android:indeterminate="false" />
 
     <TextView
