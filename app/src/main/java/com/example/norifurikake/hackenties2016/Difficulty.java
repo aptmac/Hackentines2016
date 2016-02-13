@@ -8,7 +8,7 @@ import android.widget.SeekBar;
 
 public class Difficulty extends ActionBarActivity {
     SeekBar seekBar;
-    private int _difficulty = 10;
+    private int difficulty = 10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,14 +19,14 @@ public class Difficulty extends ActionBarActivity {
     }
 
     public void toGame(View view) {
-        this._difficulty = seekBar.getProgress();
+        this.difficulty = seekBar.getProgress();
         Intent intent = new Intent(this, Game.class);
-        intent.putExtra("difficulty", this._difficulty);
+        intent.putExtra("difficulty", String.valueOf(difficulty));
         startActivity(intent);
     }
     private void setDifficulty(int difficulty){
         seekBar.setProgress(difficulty);
-        this._difficulty = difficulty;
+        this.difficulty = difficulty;
     }
     public void setDifficultyEasy(View view){
         setDifficulty(0);

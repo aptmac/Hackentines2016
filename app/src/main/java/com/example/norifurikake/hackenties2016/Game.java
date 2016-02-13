@@ -1,5 +1,6 @@
 package com.example.norifurikake.hackenties2016;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
@@ -21,8 +22,15 @@ public class Game extends ActionBarActivity {
 
     //Set up the variables and the game screen
     public void Initialize() {
+        Intent intent = getIntent();
+        String difficultyIntent = intent.getStringExtra("difficulty");
+        Log.d("Difficulty in string:", difficultyIntent);
+
+        int difficulty = Integer.parseInt(difficultyIntent);
+        Log.d("Difficulty in int:", String.valueOf(difficulty));
+
         //Initialize the current target value
-        target = 100;
+        target = 100 + difficulty;
         TextView textView = (TextView) findViewById(R.id.txtTarget);
         textView.setText("Target: " + String.valueOf(target));
 
