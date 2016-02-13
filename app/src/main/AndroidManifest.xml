@@ -4,20 +4,21 @@
 
     <application
         android:allowBackup="true"
+        android:largeHeap="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Lonely Lucy on Valentines"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".About"
             android:label="@string/title_activity_about"
+            android:screenOrientation="portrait"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -26,6 +27,7 @@
         <activity
             android:name=".Difficulty"
             android:label="@string/title_activity_difficulty"
+            android:screenOrientation="portrait"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -34,6 +36,7 @@
         <activity
             android:name=".Howtoplay"
             android:label="@string/title_activity_howtoplay"
+            android:screenOrientation="portrait"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -42,6 +45,7 @@
         <activity
             android:name=".Settings"
             android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -50,6 +54,7 @@
         <activity
             android:name=".Game"
             android:label="@string/title_activity_game"
+            android:screenOrientation="portrait"
             android:parentActivityName=".Difficulty">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

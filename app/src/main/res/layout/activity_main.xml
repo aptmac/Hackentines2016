@@ -9,14 +9,15 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:screenOrientation="portrait"
     tools:context="com.example.norifurikake.hackenties2016.MainActivity"
     android:weightSum="1"
-    android:background="#eb5858">
+    android:background="@mipmap/mainbg">
 
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="90dp"
+        android:layout_height="85dp"
         android:id="@+id/btnStart"
         android:layout_gravity="center_horizontal"
         android:nestedScrollingEnabled="false"
@@ -30,7 +31,7 @@
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="90dp"
+        android:layout_height="85dp"
         android:id="@+id/btnIHowtoplay"
         android:layout_gravity="center_horizontal"
         android:onClick="toHowtoplay"
@@ -43,7 +44,7 @@
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="90dp"
+        android:layout_height="85dp"
         android:id="@+id/btnSettings"
         android:layout_gravity="center_horizontal"
         android:onClick="toSettings"
@@ -56,7 +57,7 @@
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="90dp"
+        android:layout_height="85dp"
         android:id="@+id/btnAbout"
         android:onClick="toAbout"
         android:background="@drawable/about_button"

@@ -13,5 +13,4 @@ public class Settings extends ActionBarActivity {
         setTitle("Settings");
 
     }
-
 }

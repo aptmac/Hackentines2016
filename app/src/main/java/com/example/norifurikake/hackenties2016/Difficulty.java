@@ -33,7 +33,7 @@ public class Difficulty extends ActionBarActivity {
         setDifficulty(0);
     }
     public void setDifficultyMedium(View view){
-        setDifficulty(5);
+        setDifficulty(8);
     }
     public void setDifficultyHard(View view){
         setDifficulty(10);
