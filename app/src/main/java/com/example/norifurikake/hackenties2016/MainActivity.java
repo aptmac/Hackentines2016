@@ -11,6 +11,8 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle("Hackentines 2016");
+
     }
 
     public void toDifficulty(View view){

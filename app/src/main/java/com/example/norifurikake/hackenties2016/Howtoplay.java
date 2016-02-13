@@ -10,6 +10,6 @@ public class Howtoplay extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_howtoplay);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setTitle("How to Play");
     }
-
 }

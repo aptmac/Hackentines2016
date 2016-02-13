@@ -17,6 +17,7 @@ public class Game extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setTitle("!!!");
         Initialize();
     }
 
@@ -24,10 +25,8 @@ public class Game extends ActionBarActivity {
     public void Initialize() {
         Intent intent = getIntent();
         String difficultyIntent = intent.getStringExtra("difficulty");
-        Log.d("Difficulty in string:", difficultyIntent);
 
         int difficulty = Integer.parseInt(difficultyIntent);
-        Log.d("Difficulty in int:", String.valueOf(difficulty));
 
         //Initialize the current target value
         target = 100 + difficulty;
@@ -95,8 +94,6 @@ public class Game extends ActionBarActivity {
         //If the user has completed the puzzle ...
         if (current == target)
         {
-            Log.d("ALERT:", "You win!");
-
             //Display the smiling Girl
             imgGirl.setImageResource(R.drawable.person1_smiling);
         }
@@ -116,8 +113,6 @@ public class Game extends ActionBarActivity {
         numChocolate++;
         totalChocolate = totalChocolate + valueChocolate;
         current = current + valueChocolate;
-        Log.d("Increase: ", String.valueOf(numChocolate));
-        Log.d("Total Chocolate value: ", String.valueOf(totalChocolate));
 
         //Update all textviews
         TextView textView = (TextView) findViewById(R.id.txtChocolate);
@@ -136,7 +131,6 @@ public class Game extends ActionBarActivity {
         if (numChocolate == 0)
         {
             //do nothing
-            Log.d("Error:", "Cannot have negative value.");
         }
         else
         {
@@ -144,7 +138,6 @@ public class Game extends ActionBarActivity {
             numChocolate--;
             totalChocolate = totalChocolate - valueChocolate;
             current = current - valueChocolate;
-            Log.d("Decrease: ", String.valueOf(numChocolate));
 
             //Update the textviews
             TextView textView = (TextView) findViewById(R.id.txtChocolate);
@@ -152,7 +145,6 @@ public class Game extends ActionBarActivity {
 
             textView = (TextView) findViewById(R.id.txtCurrentChocolate);
             textView.setText(String.valueOf(totalChocolate));
-            Log.d("Total Chocolate value: ", String.valueOf(totalChocolate));
 
             textView = (TextView) findViewById(R.id.txtCurrent);
             textView.setText("Current: " + String.valueOf(current));
@@ -170,8 +162,7 @@ public class Game extends ActionBarActivity {
         numCake++;
         totalCake = totalCake + valueCake;
         current = current + valueCake;
-        Log.d("Increase: ", String.valueOf(numCake));
-        Log.d("Total cake value: ", String.valueOf(totalCake));
+
         TextView textView = (TextView) findViewById(R.id.txtCake);
         textView.setText(String.valueOf(numCake));
 
@@ -187,20 +178,18 @@ public class Game extends ActionBarActivity {
         if (numCake == 0)
         {
             //do nothing
-            Log.d("Error:", "Cannot have negative value.");
         }
         else
         {
             numCake--;
             totalCake = totalCake - valueCake;
             current = current - valueCake;
-            Log.d("Decrease: ", String.valueOf(numCake));
+
             TextView textView = (TextView) findViewById(R.id.txtCake);
             textView.setText(String.valueOf(numCake));
-            textView = (TextView) findViewById(R.id.txtCurrentCake);
 
+            textView = (TextView) findViewById(R.id.txtCurrentCake);
             textView.setText(String.valueOf(totalCake));
-            Log.d("Total cake value: ", String.valueOf(totalCake));
 
             textView = (TextView) findViewById(R.id.txtCurrent);
             textView.setText("Current: " + String.valueOf(current));
@@ -217,8 +206,7 @@ public class Game extends ActionBarActivity {
         numWine++;
         totalWine = totalWine + valueWine;
         current = current + valueWine;
-        Log.d("Increase: ", String.valueOf(numWine));
-        Log.d("Total Wine value: ", String.valueOf(totalWine));
+
         TextView textView = (TextView) findViewById(R.id.txtWine);
         textView.setText(String.valueOf(numWine));
 
@@ -234,20 +222,18 @@ public class Game extends ActionBarActivity {
         if (numWine == 0)
         {
             //do nothing
-            Log.d("Error:", "Cannot have negative value.");
         }
         else
         {
             numWine--;
             totalWine = totalWine - valueWine;
             current = current - valueWine;
-            Log.d("Decrease: ", String.valueOf(numWine));
+
             TextView textView = (TextView) findViewById(R.id.txtWine);
             textView.setText(String.valueOf(numWine));
-            textView = (TextView) findViewById(R.id.txtCurrentWine);
 
+            textView = (TextView) findViewById(R.id.txtCurrentWine);
             textView.setText(String.valueOf(totalWine));
-            Log.d("Total Wine value: ", String.valueOf(totalWine));
 
             textView = (TextView) findViewById(R.id.txtCurrent);
             textView.setText("Current: " + String.valueOf(current));
@@ -264,8 +250,7 @@ public class Game extends ActionBarActivity {
         numRose++;
         totalRose = totalRose + valueRose;
         current = current + valueRose;
-        Log.d("Increase: ", String.valueOf(numRose));
-        Log.d("Total Rose value: ", String.valueOf(totalRose));
+
         TextView textView = (TextView) findViewById(R.id.txtRose);
         textView.setText(String.valueOf(numRose));
 
@@ -281,20 +266,18 @@ public class Game extends ActionBarActivity {
         if (numRose == 0)
         {
             //do nothing
-            Log.d("Error:", "Cannot have negative value.");
         }
         else
         {
             numRose--;
             totalRose = totalRose - valueRose;
             current = current - valueRose;
-            Log.d("Decrease: ", String.valueOf(numRose));
+
             TextView textView = (TextView) findViewById(R.id.txtRose);
             textView.setText(String.valueOf(numRose));
-            textView = (TextView) findViewById(R.id.txtCurrentRose);
 
+            textView = (TextView) findViewById(R.id.txtCurrentRose);
             textView.setText(String.valueOf(totalRose));
-            Log.d("Total Rose value: ", String.valueOf(totalRose));
 
             textView = (TextView) findViewById(R.id.txtCurrent);
             textView.setText("Current: " + String.valueOf(current));
@@ -311,8 +294,7 @@ public class Game extends ActionBarActivity {
         numCat++;
         totalCat = totalCat + valueCat;
         current = current + valueCat;
-        Log.d("Increase: ", String.valueOf(numCat));
-        Log.d("Total Cat value: ", String.valueOf(totalCat));
+
         TextView textView = (TextView) findViewById(R.id.txtCat);
         textView.setText(String.valueOf(numCat));
 
@@ -328,20 +310,18 @@ public class Game extends ActionBarActivity {
         if (numCat == 0)
         {
             //do nothing
-            Log.d("Error:", "Cannot have negative value.");
         }
         else
         {
             numCat--;
             totalCat = totalCat - valueCat;
             current = current - valueCat;
-            Log.d("Decrease: ", String.valueOf(numCat));
+
             TextView textView = (TextView) findViewById(R.id.txtCat);
             textView.setText(String.valueOf(numCat));
-            textView = (TextView) findViewById(R.id.txtCurrentCat);
 
+            textView = (TextView) findViewById(R.id.txtCurrentCat);
             textView.setText(String.valueOf(totalCat));
-            Log.d("Total Cat value: ", String.valueOf(totalCat));
 
             textView = (TextView) findViewById(R.id.txtCurrent);
             textView.setText("Current: " + String.valueOf(current));

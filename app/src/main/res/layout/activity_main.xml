@@ -16,7 +16,7 @@
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="90dp"
         android:id="@+id/btnStart"
         android:layout_gravity="center_horizontal"
         android:nestedScrollingEnabled="false"
@@ -30,7 +30,7 @@
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="90dp"
         android:id="@+id/btnIHowtoplay"
         android:layout_gravity="center_horizontal"
         android:onClick="toHowtoplay"
@@ -43,7 +43,7 @@
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="90dp"
         android:id="@+id/btnSettings"
         android:layout_gravity="center_horizontal"
         android:onClick="toSettings"
@@ -56,7 +56,7 @@
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="90dp"
         android:id="@+id/btnAbout"
         android:onClick="toAbout"
         android:background="@drawable/about_button"

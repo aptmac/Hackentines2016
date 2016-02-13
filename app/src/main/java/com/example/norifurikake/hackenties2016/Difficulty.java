@@ -15,6 +15,7 @@ public class Difficulty extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_difficulty);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setTitle("Select a difficulty!");
         seekBar = (SeekBar) findViewById(R.id.difficultyBar);
     }
 
