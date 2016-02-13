@@ -54,7 +54,7 @@
         android:layout_alignLeft="@+id/btnMedium"
         android:layout_alignStart="@+id/btnMedium"
         android:layout_marginTop="73dp"
-        android:background="@drawable/start_out" />
+        android:background="@drawable/start_button" />
 
     <Button
         android:layout_width="wrap_content"
