@@ -7,42 +7,48 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.norifurikake.hackenties2016.Difficulty">
+    tools:context="com.example.norifurikake.hackenties2016.Difficulty"
+    android:background="#eb5858">
 
-    <SeekBar
-        android:id="@+id/difficultyBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:progress="5"
-        android:max="10"
-        android:paddingTop="20dp" />
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="horizontal"
-        android:layout_below="@+id/difficultyBar"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/relativeLayout">
+
+        android:id="@+id/relativeLayout"
+        android:layout_alignTop="@+id/difficultyBar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
         <TextView
             android:id="@+id/indicator1"
             android:paddingLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0" />
+            android:text="0"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
         <TextView
             android:id="@+id/indicator2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="10" />
+            android:text="10"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
         <TextView
             android:id="@+id/indicator3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:paddingRight="10dp"
-            android:text="15" />
+            android:text="15"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
     </RelativeLayout>
 
     <Button
@@ -50,39 +56,78 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnGame"
         android:onClick="toGame"
-        android:layout_below="@+id/btnMedium"
-        android:layout_alignLeft="@+id/btnMedium"
-        android:layout_alignStart="@+id/btnMedium"
-        android:layout_marginTop="73dp"
-        android:background="@drawable/start_button" />
+        android:background="@drawable/start_button"
+        android:layout_alignBaseline="@+id/btnHard"
+        android:layout_alignBottom="@+id/btnHard"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnEasy"
-        android:layout_below="@+id/relativeLayout"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="41dp"
         android:onClick="setDifficultyEasy"
-        android:background="@drawable/easy_button" />
+        android:background="@drawable/easy_button"
+        android:layout_above="@+id/btnMedium"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnMedium"
-        android:layout_below="@+id/btnEasy"
-        android:layout_centerHorizontal="true"
         android:onClick="setDifficultyMedium"
-        android:background="@drawable/medium_button" />
+        android:background="@drawable/medium_button"
+        android:layout_above="@+id/btnGame"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnHard"
-        android:layout_below="@+id/btnMedium"
-        android:layout_alignLeft="@+id/btnMedium"
-        android:layout_alignStart="@+id/btnMedium"
         android:onClick="setDifficultyHard"
-        android:background="@drawable/hard_button" />
+        android:background="@drawable/hard_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:onClick="toGame"
+        android:background="@drawable/start_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:id="@+id/difficultyBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="5"
+        android:max="10"
+        android:paddingTop="20dp"
+        android:layout_above="@+id/btnEasy"
+        android:layout_alignRight="@+id/btnEasy"
+        android:layout_alignEnd="@+id/btnEasy" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Select a Starting Difficulty!"
+        android:id="@+id/txtSelect"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"
+        android:textIsSelectable="false"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_alignRight="@+id/difficultyBar"
+        android:layout_alignEnd="@+id/difficultyBar"
+        android:textAlignment="center" />
 
 </RelativeLayout>

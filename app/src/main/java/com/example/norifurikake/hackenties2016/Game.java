@@ -6,7 +6,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import java.util.Random;
 
 
@@ -20,48 +19,33 @@ public class Game extends ActionBarActivity {
         Initialize();
     }
 
+    //Set up the variables and the game screen
     public void Initialize() {
         //Initialize the current target value
         target = 100;
         TextView textView = (TextView) findViewById(R.id.txtTarget);
         textView.setText("Target: " + String.valueOf(target));
 
+        //Display the Girl to the Screen
         ImageView imgGirl = (ImageView) findViewById(R.id.imgGirl);
         imgGirl.setImageResource(R.drawable.person1_standing);
-        /**
-        //Randomly generate the girl
-        Random r = new Random();
-        int girl = r.nextInt(5 - 1) + 5;
-        ImageView imgGirl = (ImageView) findViewById(R.id.imgGirl);
-        if (girl == 1)
-        {
-            imgGirl.setImageResource(R.drawable.person1_standing);
-        }
-        else if (girl == 2)
-        {
-            imgGirl.setImageResource(R.drawable.person2_standing);
-        }
-        else if (girl == 3)
-        {
-            imgGirl.setImageResource(R.drawable.person3_standing);
-        }
-        else if (girl == 4)
-        {
-            imgGirl.setImageResource(R.drawable.person4_standing);
-        }
-        else
-        {
-            imgGirl.setImageResource(R.drawable.person5_standing);
-        }
-         **/
 
-
-        //Initialize base values for the objects
+        //Initialize base values for the objects & update the activity form
         this.valueChocolate = 1;
+        textView = (TextView) findViewById(R.id.txtPerChocolate);
+        textView.setText(String.valueOf(valueChocolate));
         this.valueCake = 5;
+        textView = (TextView) findViewById(R.id.txtPerCake);
+        textView.setText(String.valueOf(valueCake));
         this.valueWine = 10;
+        textView = (TextView) findViewById(R.id.txtPerWine);
+        textView.setText(String.valueOf(valueWine));
         this.valueRose = 25;
+        textView = (TextView) findViewById(R.id.txtPerRose);
+        textView.setText(String.valueOf(valueRose));
         this.valueCat = 50;
+        textView = (TextView) findViewById(R.id.txtPerCat);
+        textView.setText(String.valueOf(valueCat));
     }
 
     /**
@@ -76,6 +60,15 @@ public class Game extends ActionBarActivity {
     public int valueCat = 0;
 
     /**
+     * Variables to hold the number of gifts currently given
+     */
+    public int numCake = 0;
+    public int numChocolate = 0;
+    public int numWine = 0;
+    public int numRose = 0;
+    public int numCat = 0;
+
+    /**
      * Variables to hold the running totals of each object
      */
     public int totalChocolate = 0;
@@ -85,28 +78,25 @@ public class Game extends ActionBarActivity {
     public int totalCat = 0;
 
 
-    /**
-     * Variables to hold the number of gifts currently given
-     */
-    public int numCake = 0;
-    public int numChocolate = 0;
-    public int numWine = 0;
-    public int numRose = 0;
-    public int numCat = 0;
-
+    //Function to check if the problem has been solved
     public void isSolved()
     {
+        //Create a local ImageView variable
         ImageView imgGirl = (ImageView) findViewById(R.id.imgGirl);
+
+        //If the user has completed the puzzle ...
         if (current == target)
         {
             Log.d("ALERT:", "You win!");
 
+            //Display the smiling Girl
             imgGirl.setImageResource(R.drawable.person1_smiling);
         }
         else
         {
+            //Girl is not smiling
             imgGirl.setImageResource(R.drawable.person1_standing);
-            //do nothing
+            //do nothing else
         }
     }
 
@@ -114,11 +104,14 @@ public class Game extends ActionBarActivity {
      * Increase and Decrease the quantity of Chocolate
      */
     public void IncreaseChocolate(View v){
+        //Increase the quantities
         numChocolate++;
         totalChocolate = totalChocolate + valueChocolate;
         current = current + valueChocolate;
         Log.d("Increase: ", String.valueOf(numChocolate));
         Log.d("Total Chocolate value: ", String.valueOf(totalChocolate));
+
+        //Update all textviews
         TextView textView = (TextView) findViewById(R.id.txtChocolate);
         textView.setText(String.valueOf(numChocolate));
 
@@ -128,6 +121,7 @@ public class Game extends ActionBarActivity {
         textView = (TextView) findViewById(R.id.txtCurrent);
         textView.setText("Current: " + String.valueOf(current));
 
+        //Check to see if the user has completed the puzzle
         isSolved();
     }
     public void DecreaseChocolate(View v){
@@ -138,10 +132,13 @@ public class Game extends ActionBarActivity {
         }
         else
         {
+            //Decrease the correct amount from the current total
             numChocolate--;
             totalChocolate = totalChocolate - valueChocolate;
             current = current - valueChocolate;
             Log.d("Decrease: ", String.valueOf(numChocolate));
+
+            //Update the textviews
             TextView textView = (TextView) findViewById(R.id.txtChocolate);
             textView.setText(String.valueOf(numChocolate));
 
@@ -152,6 +149,7 @@ public class Game extends ActionBarActivity {
             textView = (TextView) findViewById(R.id.txtCurrent);
             textView.setText("Current: " + String.valueOf(current));
 
+            //Check to see if the user has solved the puzzle
             isSolved();
         }
     }
