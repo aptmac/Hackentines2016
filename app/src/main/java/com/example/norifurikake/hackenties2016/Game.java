@@ -9,6 +9,15 @@ import android.widget.TextView;
 
 public class Game extends ActionBarActivity {
 
+    /**
+     * Variables to hold the target goal and current progress
+     */
+    public int target = 100;
+    public int current = 0;
+
+    /**
+     * Variables to hold the number of gifts currently given
+     */
     public int numCake = 0;
     public int numChocolate = 0;
     public int numWine = 0;
@@ -20,7 +29,6 @@ public class Game extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
     }
 
     /**
